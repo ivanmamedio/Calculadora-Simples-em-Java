@@ -1,0 +1,1 @@
+hadoop fs -copyFromLocal C50/ /
