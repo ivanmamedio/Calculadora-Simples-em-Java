@@ -50,10 +50,10 @@ public class Calculadora2 {
                     case '+':
                         resultado = somar(num1, num2);
                         break;
-                    case '-';
+                    case '-':
                         resultado = subtrair(num1, num2);
                         break;
-                    case '*';
+                    case '*':
                         resultado = multiplicar(num1, num2);
                         break;
                     case '/':
@@ -64,7 +64,7 @@ public class Calculadora2 {
                         continue;
                 }
 
-                System.out.println("Resultado: %.2f %c %.2f = %.2f%n", num1, operacao, num2, resultado);
+                System.out.printf("Resultado: %.2f %c %.2f = %.2f%n", num1, operacao, num2, resultado);
             
             } catch (Exception e) {
                 System.out.println("Erro: " + e.getMessage());
@@ -77,6 +77,6 @@ public class Calculadora2 {
 
             System.out.println("Obrigado por usar a calculadora2!");
             scanner.close();
-            
+
         }
     }
