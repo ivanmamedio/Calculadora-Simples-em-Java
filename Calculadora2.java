@@ -45,7 +45,38 @@ public class Calculadora2 {
                 double num2 = scanner.nextDouble();
 
                 double resultado = 0;
-                
+
+                switch (operacao) {
+                    case '+':
+                        resultado = somar(num1, num2);
+                        break;
+                    case '-';
+                        resultado = subtrair(num1, num2);
+                        break;
+                    case '*';
+                        resultado = multiplicar(num1, num2);
+                        break;
+                    case '/':
+                        resultado = dividir(num1, num2);
+                        break;
+                    default:
+                        System.out.println("Operação Inválida!");
+                        continue;
+                }
+
+                System.out.println("Resultado: %.2f %c %.2f = %.2f%n", num1, operacao, num2, resultado);
+            
+            } catch (Exception e) {
+                System.out.println("Erro: " + e.getMessage());
             }
+
+               System.out.print("Deseja fazer outro calculo? (s/n): ");
+               String resposta = scanner.next();
+               continuar = resposta.equalsIgnoreCase("s"); 
+            }
+
+            System.out.println("Obrigado por usar a calculadora2!");
+            scanner.close();
+            
         }
     }
