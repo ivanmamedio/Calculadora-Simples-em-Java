@@ -26,4 +26,26 @@ public class Calculadora2 {
         }
         return a / b;
     }
-}
+
+    public static void mains(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        boolean continuar = true;
+
+        System.out.println("=== CALCULADORA 2 ===");
+
+        while (continuar) {
+            try {
+                System.out.print("Digite o primeiro número: ");
+                double num1 = scanner.nextDouble();
+
+                System.out.print("Digite a operação (+, -, *, /) ");
+                char operacao = scanner.next().charAt(0);
+
+                System.out.print("Digite o segundo número: ");
+                double num2 = scanner.nextDouble();
+
+                double resultado = 0;
+                
+            }
+        }
+    }
